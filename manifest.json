@@ -1,18 +1,6 @@
 {
   "files": [
     {
-      "path": "writing/cli-add-smoke.md",
-      "title": "CLI add smoke test",
-      "size": 130,
-      "modified": 1777384828,
-      "date": null,
-      "tags": [
-        "cli",
-        "smoke"
-      ],
-      "access": null
-    },
-    {
       "path": "writing/test-2.md",
       "title": "",
       "size": null,
