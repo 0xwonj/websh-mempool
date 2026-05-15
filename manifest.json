@@ -1,3 +1,30 @@
 {
-  "entries": []
+  "entries": [
+    {
+      "path": "writing/evm-aot-jit-revmc.md",
+      "metadata": {
+        "schema": 1,
+        "kind": "page",
+        "authored": {
+          "title": "EVM AOT/JIT 이란? (feat. revmc)",
+          "date": "2026-05-15",
+          "tags": [
+            "evm",
+            "ethereum",
+            "compiler",
+            "revmc"
+          ]
+        },
+        "derived": {
+          "size_bytes": 14259,
+          "content_sha256": "0x317effbad349fecbd82692dfa3bcf81e6e730d68554e7cd34daadef94412069b",
+          "word_count": 1461
+        }
+      },
+      "mempool": {
+        "status": "draft",
+        "category": "writing"
+      }
+    }
+  ]
 }
