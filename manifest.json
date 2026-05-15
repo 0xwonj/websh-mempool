@@ -1,24 +1,6 @@
 {
   "entries": [
     {
-      "path": "writing/test-2.md",
-      "metadata": {
-        "schema": 1,
-        "kind": "page",
-        "authored": {
-          "title": "test-2",
-          "date": "2026-04-28",
-          "tags": ["test-2"]
-        },
-        "derived": {}
-      },
-      "mempool": {
-        "status": "review",
-        "priority": "high",
-        "category": "writing"
-      }
-    },
-    {
       "path": "writing/test.md",
       "metadata": {
         "schema": 1,
@@ -26,7 +8,9 @@
         "authored": {
           "title": "test",
           "date": "2026-04-28",
-          "tags": ["test"]
+          "tags": [
+            "test"
+          ]
         },
         "derived": {}
       },
