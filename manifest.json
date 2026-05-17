@@ -1,6 +1,31 @@
 {
   "entries": [
     {
+      "path": "papers/tabula.md",
+      "metadata": {
+        "schema": 1,
+        "kind": "page",
+        "authored": {
+          "title": "tabula",
+          "date": "2026-05-18",
+          "tags": [
+            "zk",
+            "PL",
+            "compiler"
+          ]
+        },
+        "derived": {
+          "size_bytes": 155,
+          "content_sha256": "0x2353d78120e0063799a15384814fd0a04f7e89a34a7294ce4c29f2ea277566d6",
+          "word_count": 4
+        }
+      },
+      "mempool": {
+        "status": "draft",
+        "category": "papers"
+      }
+    },
+    {
       "path": "projects/websh.md",
       "metadata": {
         "schema": 1,
