@@ -1,6 +1,7 @@
 ---
 title: "EVM AOT/JIT 이란? (feat. revmc)"
 status: draft
+priority: low
 modified: "2026-05-15"
 tags: [evm, ethereum, compiler, revmc]
 ---
