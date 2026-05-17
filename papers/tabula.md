@@ -1,6 +1,8 @@
 ---
 title: "tabula"
+category: papers
 status: draft
+priority: low
 modified: "2026-05-18"
 tags: [zk, PL, compiler]
 ---
