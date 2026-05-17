@@ -16,13 +16,14 @@
           ]
         },
         "derived": {
-          "size_bytes": 187,
-          "content_sha256": "0x9d576fd5a7c1e49cbf37d5b3c72bd18d2bc887e3991f0b41b2068f243eee33b9",
+          "size_bytes": 218,
+          "content_sha256": "0xd7b6fa038f81042384ca713ecaaf545986c879ac4a5c695b2107c8dc9d89eea9",
           "word_count": 4
         }
       },
       "mempool": {
         "status": "draft",
+        "priority": "low",
         "category": "papers"
       }
     },
@@ -41,13 +42,14 @@
           ]
         },
         "derived": {
-          "size_bytes": 155,
-          "content_sha256": "0x2353d78120e0063799a15384814fd0a04f7e89a34a7294ce4c29f2ea277566d6",
+          "size_bytes": 186,
+          "content_sha256": "0x79d7a40344b189e3feae91f59dc02ba22abbdb62039fbcadfd8b6ff480105e62",
           "word_count": 4
         }
       },
       "mempool": {
         "status": "draft",
+        "priority": "low",
         "category": "papers"
       }
     },
@@ -66,13 +68,14 @@
           ]
         },
         "derived": {
-          "size_bytes": 157,
-          "content_sha256": "0x39d992e4325b8d7e8a269573d2d70047012b84caf866de0c0570ffe66ca08709",
+          "size_bytes": 190,
+          "content_sha256": "0x597d53d133d7a8cab849658b86bb134233966d7761c4be1c8993b5a69b9bfffc",
           "word_count": 4
         }
       },
       "mempool": {
         "status": "draft",
+        "priority": "med",
         "category": "projects"
       }
     },
