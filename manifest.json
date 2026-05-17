@@ -1,6 +1,31 @@
 {
   "entries": [
     {
+      "path": "projects/websh.md",
+      "metadata": {
+        "schema": 1,
+        "kind": "page",
+        "authored": {
+          "title": "websh",
+          "date": "2026-05-18",
+          "tags": [
+            "rust",
+            "wasm",
+            "filesystem"
+          ]
+        },
+        "derived": {
+          "size_bytes": 157,
+          "content_sha256": "0x39d992e4325b8d7e8a269573d2d70047012b84caf866de0c0570ffe66ca08709",
+          "word_count": 4
+        }
+      },
+      "mempool": {
+        "status": "draft",
+        "category": "projects"
+      }
+    },
+    {
       "path": "writing/evm-aot-jit-revmc.md",
       "metadata": {
         "schema": 1,
