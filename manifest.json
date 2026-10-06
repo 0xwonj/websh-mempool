@@ -16,7 +16,7 @@
         },
         "derived": {
           "size_bytes": 218,
-          "content_sha256": "0xd7b6fa038f81042384ca713ecaaf545986c879ac4a5c695b2107c8dc9d89eea9",
+          "content_sha256": "d7b6fa038f81042384ca713ecaaf545986c879ac4a5c695b2107c8dc9d89eea9",
           "word_count": 4
         }
       },
@@ -41,7 +41,7 @@
         },
         "derived": {
           "size_bytes": 186,
-          "content_sha256": "0x79d7a40344b189e3feae91f59dc02ba22abbdb62039fbcadfd8b6ff480105e62",
+          "content_sha256": "79d7a40344b189e3feae91f59dc02ba22abbdb62039fbcadfd8b6ff480105e62",
           "word_count": 4
         }
       },
@@ -66,7 +66,7 @@
         },
         "derived": {
           "size_bytes": 190,
-          "content_sha256": "0x597d53d133d7a8cab849658b86bb134233966d7761c4be1c8993b5a69b9bfffc",
+          "content_sha256": "597d53d133d7a8cab849658b86bb134233966d7761c4be1c8993b5a69b9bfffc",
           "word_count": 4
         }
       },
@@ -92,7 +92,7 @@
         },
         "derived": {
           "size_bytes": 14273,
-          "content_sha256": "0xa51f31029c5558075fd01e9d1682e1fa56b35dc62ccdecb7671cc6727dbfc9a0",
+          "content_sha256": "a51f31029c5558075fd01e9d1682e1fa56b35dc62ccdecb7671cc6727dbfc9a0",
           "word_count": 1461
         }
       },
