@@ -1,0 +1,48 @@
+name: Check published drafts
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          path: content-repo
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          repository: 0xwonj/websh
+          ref: a71d2e6b09dedcaf2393a4573cbbd999692a8b29
+          path: websh
+          persist-credentials: false
+      - name: Install pinned native Rust toolchain
+        working-directory: websh
+        run: rustup show active-toolchain
+      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            websh/target
+          key: native-content-${{ runner.os }}-${{ hashFiles('websh/Cargo.lock', 'websh/rust-toolchain.toml', 'websh/crates/websh-cli/**', 'websh/crates/websh-core/**', 'websh/crates/websh-site/**') }}
+      - name: Validate unsigned native draft index
+        working-directory: websh
+        run: |
+          cargo run --locked -p websh-cli -- mempool sync ../content-repo
+          git -C ../content-repo diff --exit-code -- manifest.json
+      - name: Validate immutable publication pointer
+        working-directory: content-repo
+        run: |
+          python3 - <<'PY'
+          import json, re, subprocess
+          pointer = json.load(open('current.json'))
+          assert set(pointer) == {'commit'}
+          commit = pointer['commit']
+          assert re.fullmatch('[0-9a-f]{40}', commit)
+          subprocess.run(['git', 'merge-base', '--is-ancestor', commit, 'HEAD'], check=True)
+          subprocess.run(['git', 'diff', '--exit-code', commit, 'HEAD', '--', 'manifest.json', 'writing', 'papers', 'talks', 'projects', 'misc'], check=True)
+          PY
